@@ -1,0 +1,10 @@
+# Copyright (c) 2016, nubia. All rights reserved.
+#
+# init.project.rc
+# For the specific project only
+
+#goodix fingerprint
+
+on post-fs-data
+    chown system system /dev/goodix_fp
+	chmod 0777 /dev/goodix_fp
